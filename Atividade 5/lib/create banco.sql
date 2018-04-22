@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS `exercicio` DEFAULT CHARACTER SET utf8 ;
+USE `exercicio` ;
+
+CREATE TABLE IF NOT EXISTS `exercicio`.`pais` (
+  `id` INT(11)  NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NOT NULL,
+  `populacao` BIGINT NOT NULL,
+  `area` DECIMAL(15,2) NOT NULL ,
+  PRIMARY KEY (`id`)
+  )
